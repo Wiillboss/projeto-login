@@ -18,12 +18,14 @@ Grandes telas: acima de 1200px */
     /* A configurações de altura e largura abaixo é com relação ao MAIN do BODY */
     section#login {
         width: 80vw;
+        height: 320px;
     }
 
     section#login > div#imagem {
         float: left;
         width: 30%;
         height: 100vh;
+        
     }
 
     section#login > div#formulario {
@@ -40,6 +42,7 @@ Grandes telas: acima de 1200px */
     
     section#login{
         width: 950px;
+        height: 350px;
     }
     
     section#login > div#imagem {
@@ -58,6 +61,7 @@ Grandes telas: acima de 1200px */
     }
 
     div#formulario > p {
-        font-size: 1.1em;
+        font-size: 1.em;
+        margin: 20px 0px;
     }
 }

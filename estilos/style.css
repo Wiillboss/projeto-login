@@ -18,6 +18,7 @@
 
  body, html{
     background-color: #5f2c82;
+    /* A princípio é esse HEIGTH que está deixando a tela ENORME, precisa verificar melhor */
     height: 100vw;
     width: 100vw;
  }
@@ -34,7 +35,7 @@
     position: absolute;
     top: 50%;
     left:  50%;
-    transform: translate(-50%, -50%);
+    
     /* Abaixo está um codigo que tudo que estiver FORA DA BORDA vai ficar escondido */
     overflow: hidden;
     background-color: white;
@@ -45,6 +46,7 @@
     /* A linha abaixo é para dar uma delicada transição nas mudanças de dispositivos */
     transition: width .3s, heigth .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
  }
 
  /* Abaixo está direcionando uma mudança da DIV que carrega o ID IMAGEM dentro do section que carrega o ID LOGIN. */
@@ -80,7 +82,7 @@ div.campo{
    width: 100%;
    height: 40px;
    display: block;
-   border-radius: 5px;
+   border-radius: 8px;
    margin: 5px 0px;
    padding-left: 2px;
 }
@@ -95,6 +97,29 @@ div.campo{
    display: none;
  }
 
+ div.campo > i{
+   color: white;
+   font-size: 2em;
+   width: 40px;
+   padding: 5px;
+   /* background-color: black; */
+ }
+
+ div.campo > input{
+   background-color: #470e6b;
+   font-size: 1em;
+   height: 90%;
+   border: 0px;
+   border-radius: 8px;
+   padding: 4px;
+   width: calc(100% - 46px);
+   transform: translateY(-11px);
+ }
+
+ div.campo > input:focus-within{
+   background-color: white;
+ }
+
  div.campo > #I_entrar {
    display: block;
    margin-top: 4px;
@@ -106,7 +131,7 @@ div.campo{
    color: white;
    border-radius: 5px;
    cursor: pointer;
-   margin-top: 15px;
+   margin-top: 5px;
  }
 
 div.campo > #I_entrar:hover{
@@ -126,7 +151,7 @@ div.campo > a#I_esqueci{
    border: 1px solid #6d2a99;
    border-radius: 5px;
    cursor: pointer;
-   margin-top: 5px;
+   margin-top: -6px;
    text-decoration: none;
  }
 
