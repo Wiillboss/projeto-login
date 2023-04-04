@@ -61,3 +61,15 @@
     display: block;
     padding: 10px;
  }
+
+ /* Configurações do H1 dentro da DIV do FORMULARIO */
+ div#formulario > h1 {
+   text-align: center;
+   margin-bottom: 10px;
+
+ }
+
+ /* Configurações do PARAGRAFO (P) dentro da DIV do FORMULARIO */
+ div#formulario > p {
+   font-size: 0.8em;
+ }
