@@ -42,6 +42,9 @@
     height: 500px;
     border-radius: 20px;
     box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.452);
+    /* A linha abaixo é para dar uma delicada transição nas mudanças de dispositivos */
+    transition: width .3s, heigth .3s;
+    transition-timing-function: ease;
  }
 
  /* Abaixo está direcionando uma mudança da DIV que carrega o ID IMAGEM dentro do section que carrega o ID LOGIN. */
