@@ -73,3 +73,7 @@
  div#formulario > p {
    font-size: 0.8em;
  }
+
+ div.campo > label {
+   font-size: .9em;
+ }
