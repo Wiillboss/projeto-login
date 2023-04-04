@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*
+    Paleta de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+ */
+
+ *{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+
+    /* Aqui abaixo esta sendo feito com que a borda faça parte da conta de largura*/
+    box-sizing: border-box;
+
+ }
+
+ body, html{
+    background-color: #5f2c82;
+    height: 100vw;
+    width: 100vw;
+ }
+
+/* Para poder ajustar a localização central da SECTION é necessário deixar o posicionamento do MAIN como RELATIVE e deixar o pocisionamento da section como ABSLUTE, dentro da seciton é necessário fazer alterações como o TOP e o LEFT em 50%, isso vai deixar a section com a ponta superiror esquerda exatamente no centro do MAIN, após isso é feito uma uma trasformação com o TRANSFORM TRANSLATE para -50% -50%, assim concluindo */
+
+ main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+ }
+
+ section#login{
+    position: absolute;
+    top: 50%;
+    left:  50%;
+    transform: translate(-50%, -50%);
+    /* Abaixo está um codigo que tudo que estiver FORA DA BORDA vai ficar escondido */
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.452);
+ }
+
+ /* Abaixo está direcionando uma mudança da DIV que carrega o ID IMAGEM dentro do section que carrega o ID LOGIN. */
+ section#login > div#imagen{
+    display: block;
+    background:  #5f2c82 url(../imagens/predio.jpg) no-repeat;
+    /* Como a imagem é grande para o dispositivo, abaixo está socitidando o foco da imagem no centro dela, é possível escolher a posição de aconrdo com dois pontos de referência */
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+ }
+
+ section#login > div#formulario{
+    display: block;
+    padding: 10px;
+ }
