@@ -45,7 +45,7 @@
  }
 
  /* Abaixo está direcionando uma mudança da DIV que carrega o ID IMAGEM dentro do section que carrega o ID LOGIN. */
- section#login > div#imagen{
+ section#login > div#imagem{
     display: block;
     background:  #5f2c82 url(../imagens/predio.jpg) no-repeat;
     /* Como a imagem é grande para o dispositivo, abaixo está socitidando o foco da imagem no centro dela, é possível escolher a posição de aconrdo com dois pontos de referência */
