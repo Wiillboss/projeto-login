@@ -12,7 +12,7 @@ Grandes telas: acima de 1200px */
 /* Abaixo está feio uma configuração para TABLET */
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body{
-        background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.137), black,black,  rgba(255, 115, 0, 0.651), rgb(163, 163, 163),rgb(163, 163, 163));
+        /* background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.137),black,  rgba(255, 115, 0, 0.651), rgb(163, 163, 163),rgb(163, 163, 163)); */
     }
     
     /* A configurações de altura e largura abaixo é com relação ao MAIN do BODY */
@@ -35,9 +35,10 @@ Grandes telas: acima de 1200px */
 }
 
 /* Abaixo está feito uma configuração para DESKTOP */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
     body{
-        background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.137), black,black,  rgba(255, 115, 0, 0.651), rgb(163, 163, 163));
+        /* background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.137),
+         black,black,  rgba(255, 115, 0, 0.651), rgb(163, 163, 163)); */
     }
     
     section#login{
