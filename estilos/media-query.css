@@ -37,8 +37,7 @@ Grandes telas: acima de 1200px */
 /* Abaixo está feito uma configuração para DESKTOP */
 @media screen and (min-width: 993px) {
     body{
-        /* background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.137),
-         black,black,  rgba(255, 115, 0, 0.651), rgb(163, 163, 163)); */
+        background-image: linear-gradient(gray, rgba(196, 154, 16, 0.87), rgb(10, 10, 10));
     }
     
     section#login{
